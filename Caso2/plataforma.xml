@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plataforma xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="plataforma.xsd">
+
+<plataforma fecha_publicacion="2025-10-24">
+    <cursos>
+        <curso id="c1" codigo="CURS-001">
+            <titulo>Introducción a la Programación</titulo>
+            <nivel>Básico</nivel>
+            <modalidad>Online</modalidad>
+            <horas>60</horas>
+            <modulos>
+                <modulo clave="M1">
+                    <nombre>Fundamentos de Programación</nombre>
+                    <horas>30</horas>
+                </modulo>
+                <modulo clave="M2">
+                    <nombre>Estructuras de Datos</nombre>
+                    <horas>30</horas>
+                </modulo>
+            </modulos>
+        </curso>
+        <curso id="c2" codigo="CURS-002">
+            <titulo>Desarrollo Web</titulo>
+            <nivel>Intermedio</nivel>
+            <modalidad>Presencial</modalidad>
+            <horas>80</horas>
+        </curso>
+    </cursos>
+
+    <alumnos>
+        <alumno id="a1" nif="12345678A">
+            <nombre>Ana López</nombre>
+            <email>ana.lopez@example.com</email>
+            <telefono>600123456</telefono>
+        </alumno>
+        <alumno id="a2" nif="98765432B">
+            <nombre>Carlos Pérez</nombre>
+            <email>carlos.perez@example.com</email>
+        </alumno>
+    </alumnos>
+
+    <matriculas>
+        <matricula id="m1" alumnoRef="a1" cursoRef="c1">
+            <fecha_alta>2025-09-01</fecha_alta>
+            <estado>Activa</estado>
+        </matricula>
+        <matricula id="m2" alumnoRef="a2" cursoRef="c2">
+            <fecha_alta>2025-09-15</fecha_alta>
+            <estado>Activa</estado>
+        </matricula>
+    </matriculas>
+
+    <evaluaciones>
+        <evaluacion id="e1" matriculaRef="m1">
+            <instrumento>Examen Final</instrumento>
+            <convocatoria>Junio</convocatoria>
+            <nota>8.5</nota>
+        </evaluacion>
+        <evaluacion id="e2" matriculaRef="m2">
+            <instrumento>Proyecto</instrumento>
+            <convocatoria>Julio</convocatoria>
+            <nota>9.0</nota>
+        </evaluacion>
+    </evaluaciones>
+</plataforma>
