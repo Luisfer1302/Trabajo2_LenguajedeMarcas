@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "library.dtd">
+<library>
+    <book>
+        <title>100 años de soledad</title>
+        <author>Gabriel García Márquez</author>
+        <year>1967</year>
+        <publisher>Editorial Sudamericana</publisher>
+        <pages>471</pages>
+    </book>
+</library>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plataforma xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="plataforma.xsd">
-
-<plataforma fecha_publicacion="2025-10-24">
+<plataforma fecha_publicacion="2025-10-24" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="plataforma.xsd">
     <cursos>
         <curso id="c1" codigo="CURS-001">
             <titulo>Introducción a la Programación</titulo>

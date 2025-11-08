@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
- <xs:simpleType name="isbnType">
+    <xs:simpleType name="isbnType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="(97(8|9))?\d{9}(\d|X)$"/>
+            <xs:pattern value="[0-9]{13}"/>
         </xs:restriction>
     </xs:simpleType>
-
     <xs:simpleType name="issnType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="\d{4}-\d{3}(\d|X)"/>
+            <xs:pattern value="[0-9]{4}-[0-9]{4}"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="emailType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"/>
+            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="orcidType">
         <xs:restriction base="xs:string">
-            <xs:pattern value="\d{4}-\d{4}-\d{4}-\d{3}(\d|X)"/>
+            <xs:pattern value="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"/>
+        </xs:pattern>
         </xs:restriction>
     </xs:simpleType>
 
@@ -50,7 +50,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="titulo" type="xs:string"/>
-                            <xs:element name="anio" type="xs:gYear"/>
+                            <xs:element name="anio" type="xs:integer"/>
                             <xs:element name="autores">
                                 <xs:complexType>
                                     <xs:sequence>
@@ -90,7 +90,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="titulo" type="xs:string"/>
-                            <xs:element name="anio" type="xs:gYear"/>
+                            <xs:element name="anio" type="xs:integer"/>
                         </xs:sequence>
                         <xs:attribute name="id" type="xs:ID" use="required"/>
                         <xs:attribute name="area" type="xs:string" use="required"/>
